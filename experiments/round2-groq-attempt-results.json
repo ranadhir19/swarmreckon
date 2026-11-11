@@ -1,0 +1,157 @@
+{
+  "generated_at": "2026-11-11T01:19:59+0000",
+  "repeats": 2,
+  "runs": [
+    {
+      "task": "utils-trio",
+      "mode": "sequential",
+      "rep": 0,
+      "run_id": "20261111-011718-sequential-305953",
+      "wall_s": 10.957,
+      "files": [
+        "backoff.py",
+        "chunker.py",
+        "test_backoff.py",
+        "textslug.py"
+      ],
+      "check_score": 1.0,
+      "check_detail": "4/4 produced tests passed",
+      "review_score": 4,
+      "review_verdict": "revise",
+      "prompt_tokens": 5503,
+      "completion_tokens": 3689,
+      "retries": 0,
+      "cost_estimate_usd": 0.002054,
+      "error": ""
+    },
+    {
+      "task": "utils-trio",
+      "mode": "sequential",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m73mjqq5ef9tgp94k74b5879` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199897, Re",
+      "wall_s": 47.657
+    },
+    {
+      "task": "utils-trio",
+      "mode": "parallel",
+      "rep": 0,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m73mjqq5ef9tgp94k74b5879` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199857, Re",
+      "wall_s": 17.4
+    },
+    {
+      "task": "utils-trio",
+      "mode": "parallel",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m73mjqq5ef9tgp94k74b5879` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199819, Re",
+      "wall_s": 16.247
+    },
+    {
+      "task": "docs-trio",
+      "mode": "sequential",
+      "rep": 0,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m73mjqq5ef9tgp94k74b5879` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199781, Re",
+      "wall_s": 16.451
+    },
+    {
+      "task": "docs-trio",
+      "mode": "sequential",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m73mjqq5ef9tgp94k74b5879` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199743, Re",
+      "wall_s": 16.5
+    },
+    {
+      "task": "docs-trio",
+      "mode": "parallel",
+      "rep": 0,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m73mjqq5ef9tgp94k74b5879` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199706, Re",
+      "wall_s": 16.052
+    },
+    {
+      "task": "docs-trio",
+      "mode": "parallel",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m73mjqq5ef9tgp94k74b5879` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199667, Re",
+      "wall_s": 16.55
+    }
+  ],
+  "summary": {
+    "utils-trio": {
+      "sequential": {
+        "runs_ok": 1,
+        "wall_s": {
+          "mean": 10.957,
+          "min": 10.957,
+          "max": 10.957,
+          "stdev": 0.0
+        },
+        "check_score": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "stdev": 0.0
+        },
+        "prompt_tokens_mean": 5503,
+        "completion_tokens_mean": 3689,
+        "retries_total": 0
+      },
+      "parallel": {
+        "runs_ok": 0,
+        "wall_s": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "check_score": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "prompt_tokens_mean": null,
+        "completion_tokens_mean": null,
+        "retries_total": 0
+      },
+      "speedup_parallel_vs_sequential": null
+    },
+    "docs-trio": {
+      "sequential": {
+        "runs_ok": 0,
+        "wall_s": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "check_score": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "prompt_tokens_mean": null,
+        "completion_tokens_mean": null,
+        "retries_total": 0
+      },
+      "parallel": {
+        "runs_ok": 0,
+        "wall_s": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "check_score": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "prompt_tokens_mean": null,
+        "completion_tokens_mean": null,
+        "retries_total": 0
+      },
+      "speedup_parallel_vs_sequential": null
+    }
+  }
+}

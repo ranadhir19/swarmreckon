@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swarmreckon"
+version = "0.1.0"
+description = "A parallel multi-agent runner that grades itself: parallel-vs-sequential benchmarking, a per-agent evidence and cost ledger, and human approval gates on every write."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Ranadhir Ghosh" }]
+requires-python = ">=3.10"
+keywords = ["agents", "orchestration", "benchmarking", "llm", "parallel"]
+
+[project.scripts]
+swarmreckon = "swarmreckon.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+swarmreckon = ["prices.json"]

@@ -1,0 +1,258 @@
+{
+  "generated_at": "2026-11-11T01:14:50+0000",
+  "repeats": 2,
+  "runs": [
+    {
+      "task": "utils-trio",
+      "mode": "sequential",
+      "rep": 0,
+      "run_id": "20261111-011123-sequential-8b09b1",
+      "wall_s": 10.694,
+      "files": [
+        "utils/backoff.py",
+        "utils/chunker.py",
+        "utils/test_backoff.py",
+        "utils/textslug.py"
+      ],
+      "check_score": 1.0,
+      "check_detail": "4/4 produced tests passed",
+      "review_score": 5,
+      "review_verdict": "revise",
+      "prompt_tokens": 4802,
+      "completion_tokens": 3146,
+      "retries": 0,
+      "cost_estimate_usd": 0.001799,
+      "error": ""
+    },
+    {
+      "task": "utils-trio",
+      "mode": "sequential",
+      "rep": 1,
+      "run_id": "20261111-011147-sequential-e4ac71",
+      "wall_s": 9.491,
+      "files": [
+        "backoff.py",
+        "chunker.py",
+        "test_chunker.py",
+        "textslug.py"
+      ],
+      "check_score": 1.0,
+      "check_detail": "3/3 produced tests passed",
+      "review_score": 5,
+      "review_verdict": "revise",
+      "prompt_tokens": 5095,
+      "completion_tokens": 3328,
+      "retries": 0,
+      "cost_estimate_usd": 0.001885,
+      "error": ""
+    },
+    {
+      "task": "utils-trio",
+      "mode": "parallel",
+      "rep": 0,
+      "run_id": "20261111-011218-parallel-7d3acd",
+      "wall_s": 8.009,
+      "files": [
+        "backoff.py",
+        "chunker.py",
+        "test_chunker.py",
+        "textslug.py"
+      ],
+      "check_score": 1.0,
+      "check_detail": "3/3 produced tests passed",
+      "review_score": 4,
+      "review_verdict": "revise",
+      "prompt_tokens": 5093,
+      "completion_tokens": 4135,
+      "retries": 0,
+      "cost_estimate_usd": 0.002122,
+      "error": ""
+    },
+    {
+      "task": "utils-trio",
+      "mode": "parallel",
+      "rep": 1,
+      "run_id": "20261111-011241-parallel-eec3f4",
+      "wall_s": 23.122,
+      "files": [
+        "backoff.py",
+        "chunker.py",
+        "test_backoff.py",
+        "textslug.py"
+      ],
+      "check_score": 1.0,
+      "check_detail": "3/3 produced tests passed",
+      "review_score": 6,
+      "review_verdict": "revise",
+      "prompt_tokens": 5810,
+      "completion_tokens": 3382,
+      "retries": 3,
+      "cost_estimate_usd": 0.002016,
+      "error": ""
+    },
+    {
+      "task": "docs-trio",
+      "mode": "sequential",
+      "rep": 0,
+      "run_id": "20261111-011316-sequential-bc3808",
+      "wall_s": 21.968,
+      "files": [
+        "docs/api.md",
+        "docs/changelog.md",
+        "docs/faq.md"
+      ],
+      "check_score": 0.0,
+      "check_detail": "api.md missing; faq.md missing; changelog.md missing",
+      "review_score": 9,
+      "review_verdict": "pass",
+      "prompt_tokens": 4260,
+      "completion_tokens": 2079,
+      "retries": 4,
+      "cost_estimate_usd": 0.001336,
+      "error": ""
+    },
+    {
+      "task": "docs-trio",
+      "mode": "sequential",
+      "rep": 1,
+      "run_id": "20261111-011338-sequential-a2dc4f",
+      "wall_s": 34.243,
+      "files": [
+        "docs/api.md",
+        "docs/changelog.md",
+        "docs/faq.md"
+      ],
+      "check_score": 0.0,
+      "check_detail": "api.md missing; faq.md missing; changelog.md missing",
+      "review_score": 10,
+      "review_verdict": "pass",
+      "prompt_tokens": 4173,
+      "completion_tokens": 2387,
+      "retries": 6,
+      "cost_estimate_usd": 0.001409,
+      "error": ""
+    },
+    {
+      "task": "docs-trio",
+      "mode": "parallel",
+      "rep": 0,
+      "run_id": "20261111-011413-parallel-9d990f",
+      "wall_s": 14.602,
+      "files": [
+        "docs/api.md",
+        "docs/changelog.md",
+        "docs/faq.md"
+      ],
+      "check_score": 0.0,
+      "check_detail": "api.md missing; faq.md missing; changelog.md missing",
+      "review_score": 9,
+      "review_verdict": "pass",
+      "prompt_tokens": 4225,
+      "completion_tokens": 3116,
+      "retries": 4,
+      "cost_estimate_usd": 0.001754,
+      "error": ""
+    },
+    {
+      "task": "docs-trio",
+      "mode": "parallel",
+      "rep": 1,
+      "run_id": "20261111-011427-parallel-2f659d",
+      "wall_s": 22.285,
+      "files": [
+        "docs/api.md",
+        "docs/changelog.md",
+        "docs/faq.md"
+      ],
+      "check_score": 0.0,
+      "check_detail": "api.md missing; faq.md missing; changelog.md missing",
+      "review_score": 10,
+      "review_verdict": "pass",
+      "prompt_tokens": 4203,
+      "completion_tokens": 1917,
+      "retries": 7,
+      "cost_estimate_usd": 0.001286,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "utils-trio": {
+      "sequential": {
+        "runs_ok": 2,
+        "wall_s": {
+          "mean": 10.093,
+          "min": 9.491,
+          "max": 10.694,
+          "stdev": 0.851
+        },
+        "check_score": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "stdev": 0.0
+        },
+        "prompt_tokens_mean": 4948.5,
+        "completion_tokens_mean": 3237,
+        "retries_total": 0
+      },
+      "parallel": {
+        "runs_ok": 2,
+        "wall_s": {
+          "mean": 15.566,
+          "min": 8.009,
+          "max": 23.122,
+          "stdev": 10.687
+        },
+        "check_score": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "stdev": 0.0
+        },
+        "prompt_tokens_mean": 5451.5,
+        "completion_tokens_mean": 3758.5,
+        "retries_total": 3
+      },
+      "speedup_parallel_vs_sequential": 0.648
+    },
+    "docs-trio": {
+      "sequential": {
+        "runs_ok": 2,
+        "wall_s": {
+          "mean": 28.105,
+          "min": 21.968,
+          "max": 34.243,
+          "stdev": 8.68
+        },
+        "check_score": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "stdev": 0.0
+        },
+        "prompt_tokens_mean": 4216.5,
+        "completion_tokens_mean": 2233,
+        "retries_total": 10
+      },
+      "parallel": {
+        "runs_ok": 2,
+        "wall_s": {
+          "mean": 18.444,
+          "min": 14.602,
+          "max": 22.285,
+          "stdev": 5.433
+        },
+        "check_score": {
+          "mean": 0.0,
+          "min": 0.0,
+          "max": 0.0,
+          "stdev": 0.0
+        },
+        "prompt_tokens_mean": 4214,
+        "completion_tokens_mean": 2516.5,
+        "retries_total": 11
+      },
+      "speedup_parallel_vs_sequential": 1.524
+    }
+  }
+}

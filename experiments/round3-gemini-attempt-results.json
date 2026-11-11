@@ -1,0 +1,159 @@
+{
+  "generated_at": "2026-11-11T01:24:04+0000",
+  "repeats": 2,
+  "runs": [
+    {
+      "task": "utils-trio",
+      "mode": "sequential",
+      "rep": 0,
+      "run_id": "20261111-012028-sequential-056b33",
+      "wall_s": 46.375,
+      "files": [
+        "backoff.py",
+        "chunker.py",
+        "test_backoff.py",
+        "test_chunker.py",
+        "test_textslug.py",
+        "textslug.py"
+      ],
+      "check_score": 1.0,
+      "check_detail": "11/11 produced tests passed",
+      "review_score": 10,
+      "review_verdict": "pass",
+      "prompt_tokens": 4052,
+      "completion_tokens": 1383,
+      "retries": 3,
+      "cost_estimate_usd": 0.0,
+      "error": ""
+    },
+    {
+      "task": "utils-trio",
+      "mode": "sequential",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 6h38m16s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_",
+      "wall_s": 22.811
+    },
+    {
+      "task": "utils-trio",
+      "mode": "parallel",
+      "rep": 0,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 5 requests per minute on Free Tier). Please retry in 46s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_man",
+      "wall_s": 30.319
+    },
+    {
+      "task": "utils-trio",
+      "mode": "parallel",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 6h37m3s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_m",
+      "wall_s": 43.177
+    },
+    {
+      "task": "docs-trio",
+      "mode": "sequential",
+      "rep": 0,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 6h36m46s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_",
+      "wall_s": 16.691
+    },
+    {
+      "task": "docs-trio",
+      "mode": "sequential",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 6h36m29s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_",
+      "wall_s": 16.8
+    },
+    {
+      "task": "docs-trio",
+      "mode": "parallel",
+      "rep": 0,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 6h36m11s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_",
+      "wall_s": 18.0
+    },
+    {
+      "task": "docs-trio",
+      "mode": "parallel",
+      "rep": 1,
+      "error": "ProviderError: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded for model gemini-3.6-flash (limit: 20 requests per day on Free Tier). Please retry in 6h35m54s or upgrade your tier at https://ai.dev/rate-limit.\",\"code\":\"too_",
+      "wall_s": 16.999
+    }
+  ],
+  "summary": {
+    "utils-trio": {
+      "sequential": {
+        "runs_ok": 1,
+        "wall_s": {
+          "mean": 46.375,
+          "min": 46.375,
+          "max": 46.375,
+          "stdev": 0.0
+        },
+        "check_score": {
+          "mean": 1.0,
+          "min": 1.0,
+          "max": 1.0,
+          "stdev": 0.0
+        },
+        "prompt_tokens_mean": 4052,
+        "completion_tokens_mean": 1383,
+        "retries_total": 3
+      },
+      "parallel": {
+        "runs_ok": 0,
+        "wall_s": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "check_score": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "prompt_tokens_mean": null,
+        "completion_tokens_mean": null,
+        "retries_total": 0
+      },
+      "speedup_parallel_vs_sequential": null
+    },
+    "docs-trio": {
+      "sequential": {
+        "runs_ok": 0,
+        "wall_s": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "check_score": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "prompt_tokens_mean": null,
+        "completion_tokens_mean": null,
+        "retries_total": 0
+      },
+      "parallel": {
+        "runs_ok": 0,
+        "wall_s": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "check_score": {
+          "mean": null,
+          "min": null,
+          "max": null,
+          "stdev": null
+        },
+        "prompt_tokens_mean": null,
+        "completion_tokens_mean": null,
+        "retries_total": 0
+      },
+      "speedup_parallel_vs_sequential": null
+    }
+  }
+}
